@@ -17,7 +17,7 @@ jobs:
         run: yarn install
 
       - name: Web build
-        run: expo export --platform web
+        run: npx expo export --platform web
 
       - name: Upload dist artifact
         uses: actions/upload-artifact@v4
